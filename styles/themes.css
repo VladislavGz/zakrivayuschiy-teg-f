@@ -9,6 +9,9 @@
     --bg-image: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, #007f0c, #004306);
+
+    --main-color: #00CC14;
+    --bg-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +19,9 @@
         --bg-image: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px),
             repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
             linear-gradient(to bottom, #007f0c, #004306);
+
+        --main-color: #00CC14;
+        --bg-color: #000;
     }
 }
 
@@ -23,6 +29,9 @@
     --bg-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
         repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
         linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+    --main-color: #000;
+    --bg-color: #fff;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,5 +39,8 @@
         --bg-image: repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
             repeating-linear-gradient(to right, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
             linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+
+        --main-color: #000;
+        --bg-color: #fff;
     }
 }
