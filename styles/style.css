@@ -11,9 +11,9 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
 
+/*page------------------------------------------------------*/
 .page {
     min-inline-size: 320px;
     min-block-size: 100dvb;
@@ -22,6 +22,7 @@
     background-size: cover;
 }
 
+/*header------------------------------------------------------*/
 .header {
     margin-inline: auto;
     margin-block-start: 102px;
@@ -55,34 +56,70 @@
 }
 
 .header__theme-menu {
+    display: flex;
+    justify-content: center;
     margin-block-start: 23px;
     margin-block-end: 25px;
+    padding-inline-start: 17px;
 }
 
 .theme-menu__list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .theme-menu__button {
-    inline-size: 100px;
-    padding-inline-start: 17px;
-
     background-color: transparent;
     border: none;
 
     font-size: 14px;
     text-transform: uppercase;
     text-align: start;
+
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.theme-menu__button:hover {
+    opacity: 0.6;
+}
+
+.theme-menu__button:focus {
+    outline: none;
+}
+
+.theme-menu__button:focus-visible {
+    opacity: 0.6;
+}
+
+.theme-menu__button::after {
+    content: '';
+    display: block;
+    inline-size: 100%;
+    block-size: 2px;
+    background-color: var(--main-color);
+    scale: 0;
+
+    transition: scale .3s ease;
+    transform-origin: 0;
+}
+
+.theme-menu__button:focus-visible::after {
+    scale: 1.0;
 }
 
 .theme-menu__button[disabled="true"] {
     opacity: 0.6;
 }
 
+.theme-menu__button[disabled="true"] {
+    pointer-events: none;
+}
+
 .theme-menu__button[disabled="true"]::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     translate: -20px;
@@ -92,7 +129,6 @@
     border-top: 6px solid transparent;
     border-left: 12px solid var(--main-color);
     border-bottom: 6px solid transparent;
-
     opacity: 0.6;
 
     animation: arrow-animation .5s ease-in-out infinite;
