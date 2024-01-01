@@ -20,8 +20,12 @@
     min-inline-size: 320px;
     min-block-size: 100dvb;
 
+    block-size: 100vh;
+
     background-image: var(--bg-image);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*header------------------------------------------------------*/
