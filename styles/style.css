@@ -147,6 +147,8 @@
 }
 
 .card {
+    margin-block-start: 52px;
+
     background-color: var(--bg-color);
     outline: 2px solid var(--main-color);
 }
