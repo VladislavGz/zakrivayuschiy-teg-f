@@ -147,7 +147,7 @@
 }
 
 .card {
-    margin-block-start: 52px;
+    margin-block-start: 55px;
 
     background-color: var(--bg-color);
     outline: 2px solid var(--main-color);
@@ -167,6 +167,8 @@
 
 .card__img-container {
     display: grid;
+
+    outline: 2px solid var(--main-color);
 }
 
 .img-label {
@@ -205,15 +207,14 @@
     width: 100%;
     aspect-ratio: 1.0;
 
-    outline: 2px solid var(--main-color);
-
     object-position: center;
     object-fit: cover;
 }
 
 .card__footer {
     padding-inline: 25px;
-    padding-block: 28px;
+    padding-block-start: 28px;
+    padding-block-end: 25px;
 }
 
 .card__description-container {
@@ -371,31 +372,32 @@
 
 /*img filters--------------------------------------------------------*/
 .filter-clean-sheet {
-
+    filter: brightness(1.5);
 }
 
 .filter-if-fail {
-
+    filter: contrast(10);
 }
 
 .filter-ideal {
-
+    filter: hue-rotate(135deg);
 }
 
 .filter-who {
-
+    filter: saturate(0.6);
 }
 
 .filter-strategies {
-
+    filter: grayscale(0.8);
 }
 
 .filter-hands-down {
     object-position: 0;
+    filter: blur(4px);
 }
 
 .filter-final {
-
+    filter: blur(2px) contrast(2.5);
 }
 
 
