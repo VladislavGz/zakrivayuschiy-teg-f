@@ -13,6 +13,8 @@
     --main-color: #00CC14;
     --bg-color: #000;
     --button-text-color: var(--main-color);
+    --card-title-weight: 785;
+    --card-description-weight: 465;
 
     /*heart colors*/
     --heart-contour-color: var(--main-color);
@@ -28,6 +30,8 @@
         --main-color: #00CC14;
         --bg-color: #000;
         --button-text-color: var(--main-color);
+        --card-title-weight: 785;
+        --card-description-weight: 465;
 
         /*heart colors*/
         --heart-contour-color: var(--main-color);
@@ -43,6 +47,8 @@
     --main-color: #000;
     --bg-color: #fff;
     --button-text-color: var(--bg-color);
+    --card-title-weight: 700;
+    --card-description-weight: 400;
 
     /*heart colors*/
     --heart-contour-color: var(--main-color);
@@ -58,6 +64,8 @@
         --main-color: #000;
         --bg-color: #fff;
         --button-text-color: var(--bg-color);
+        --card-title-weight: 700;
+        --card-description-weight: 400;
 
         /*heart colors*/
         --heart-contour-color: var(--main-color);
