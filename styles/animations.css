@@ -14,15 +14,15 @@
 */
 @keyframes arrow-animation {
     from {
-        translate: -20px;
+        translate: -20px 0;
     }
 
     50% {
-        translate: -16px;
+        translate: -16px 0;
     }
 
     to {
-        translate: -20px;
+        translate: -20px 0;
     }
 }
 

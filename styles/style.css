@@ -105,12 +105,12 @@
     line-height: normal;
 }
 
-.header__title {
+.header__logo {
     font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     text-transform: uppercase;
 }
 
-.header__subtitle {
+.header__title {
     margin-block-start: 20px;
 
     font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -182,7 +182,7 @@
     content: '▶';
     display: block;
     position: absolute;
-    translate: -20px;
+    translate: -20px 0;
 
     opacity: 0.6;
 
@@ -194,13 +194,11 @@
     margin-block-start: 100px;
 }
 
-.card-list__item {
+.card {
     margin-block-start: 49.8px;
     margin-inline: auto;
     max-inline-size: 700px;
-}
 
-.card {
     background-color: var(--bg-color, #000);
     border: 2px solid var(--main-color, #00CC14);
 }
@@ -416,18 +414,11 @@
     block-size: 55px;
 }
 
-.footer__button-section {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    align-self: center;
-}
-
-.footer__button-icon {
-    inset-block-end: 36px;
-    margin-inline-end: 5px;
-
-    color: var(--button-text-color, #00CC14);
-    mix-blend-mode: difference;
+.footer__button .button__text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-self: center;
 }
 
 @media (width < 768px) {
@@ -435,11 +426,8 @@
         block-size: 84px;
     }
 
-    .footer__button-section {
-        display: flex;
+    .footer__button .button__text {
         flex-direction: column;
-        align-items: center;
-        gap: 8px;
     }
 
     .footer__button-icon {
@@ -471,6 +459,7 @@
 }
 
 .dialog__icon {
+    flex-shrink: 0;
     color: var(--main-color, #00CC14);
 }
 
@@ -485,7 +474,7 @@
 }
 
 .dialog__button {
-    margin-block-start: 30px;
+    margin-block-start: 28px;
 
     inline-size: 100%;
     block-size: 40px;

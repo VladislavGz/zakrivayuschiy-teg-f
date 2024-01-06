@@ -6,4 +6,18 @@
 
     --main-font: 'Inter-Variable';
     --accent-font: 'PressStart2P';
+
+    --bg-image: repeating-linear-gradient(to right, #000, #000 2px, transparent 2px, transparent 4px),
+        repeating-linear-gradient(to bottom, #000, #000 2px, transparent 2px, transparent 4px),
+        linear-gradient(to bottom, #007f0c, #004306);
+
+    --main-color: #00CC14;
+    --bg-color: #000;
+    --button-text-color: var(--main-color);
+    --card-title-weight: 785;
+    --card-description-weight: 465;
+
+    /*heart colors*/
+    --heart-contour-color: var(--main-color);
+    --heart-sparks-color: #f00;
 }
